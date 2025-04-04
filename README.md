@@ -1,2 +1,2 @@
-# GT-10
+# gt-10
 Projetos realizados em sala de aula GT-10
