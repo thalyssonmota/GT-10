@@ -10,7 +10,7 @@ function rentCar(days, km) {
   }
 }
 
-rentCar(5, 1200); 
+rentCar(5, 1200);
 rentCar(3, 800);
 rentCar(10, 2000);
 
