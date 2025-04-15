@@ -7,23 +7,22 @@ const user = {
 function calcularImc(user) {
   const imc = user.peso / (user.altura * user.altura);
   console.log(`Seu IMC é ${imc.toFixed(2)}`);
-  if (imc < 16){
-    console.log("Magreza grave");
-  } else if (imc >= 16 && imc < 16.9) {
-    console.log("Magreza moderada");
-  } else if (imc >= 17 && imc < 18.4) {
-    console.log("Magreza leve");
-  } else if (imc >= 18.5 && imc < 24.9) {
-    console.log("Saudável");
-  } else if (imc >= 25 && imc < 29.9) {
-    console.log("Sobrepeso");
-  } else if (imc >= 30 && imc < 34.9) {
-    console.log("Obesidade grau I");
-  } else if (imc >= 35 && imc < 39.9) {
-    console.log("Obesidade grau II");
-  } else {
-    console.log("Obesidade grau III ou mórbida");
+  if (imc < 16) {
+    return console.log("Magreza grave");
+  } if (imc >= 16 && imc < 16.9) {
+    return console.log("Magreza moderada");
+  } if (imc >= 17 && imc < 18.5) {
+    return console.log("Magreza leve");
+  } if (imc >= 18.5 && imc < 25) {
+    return console.log("Peso normal");
+  } if (imc >= 25 && imc < 30) {
+    return console.log("Sobrepeso");
+  } if (imc >= 30 && imc < 35) {
+    return console.log("Obesidade grau 1");
+  } if (imc >= 35 && imc < 40) {
+    return console.log("Obesidade grau 2");
+  } if (imc >= 40) {
+    return console.log("Obesidade grau 3");
   }
 }
-
 calcularImc(user);
