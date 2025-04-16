@@ -24,11 +24,11 @@ function calcular() {
   var mensagem = ""
   // verificando o resultado do imc e armazenando na variável mensagem
   if (imc < 16) {
-    mensagem = "Você está com Magreza grave"
+    mensagem = "Você está com Magreza Grave"
   } if (imc >= 16 && imc < 16.9) {
-    mensagem = "Você está com Magreza moderada"
+    mensagem = "Você está com Magreza Moderada"
   } if (imc >= 17 && imc < 18.5) {
-    mensagem = "Você está com Magreza leve"
+    mensagem = "Você está com Magreza Leve"
   } if (imc >= 18.5 && imc < 25) {
     mensagem = "Você está Saudável"
   } if (imc >= 25 && imc < 30) {
