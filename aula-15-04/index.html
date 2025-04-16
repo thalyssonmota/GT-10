@@ -15,9 +15,8 @@
   <div class="container">
 
     <div class="left">
-      <img src="images/fitness-tracker-animate.svg" alt="Imagem animada de homem corrento">
+      <img src="images/fitness-tracker-animate.svg" width="600px" alt="Imagem animada de homem corrento">
     </div>
-
 
     <div class="right">
       <div class="card">
@@ -25,54 +24,43 @@
           <h1>Calculadora-IMC</h1>
           <div class="line"></div>
         </div>
-
-
         <div class="middle">
           <div class="inp">
             <label for="peso">Peso em Kg</label>
             <div class="campo">
-
               <div class="icon">
                 <i class="fa-solid fa-weight-hanging"></i>
               </div>
-
-              <div class="campo-imput">
-                <input type="number" id="peso" placeholder="Digite seu peso" required>
+              <div class="campo-input">
+                <input type="number" id="peso">
               </div>
-
               <div class="value">
                 <p>Kg</p>
               </div>
-
             </div>
-
           </div>
-
           <div class="inp">
-            <label for="altura">Altura em M</label>
+            <label for="altura">Altura em m</label>
             <div class="campo">
               <div class="icon">
                 <i class="fa-solid fa-ruler"></i>
               </div>
-              <div class="campo-imput">
-                <input type="number" id="altura" placeholder="Digite sua altura" required>
+              <div class="campo-input">
+                <input type="number" id="altura">
               </div>
               <div class="value">
                 <p>M</p>
               </div>
             </div>
           </div>
-
-          <button id="btn-calcular">Calcular</button>
-
-          
+          <button id="btn">Calcular</button>
         </div>
-        <div class="end">
-
-        </div>
-
+        <div class="end" id="end"></div>
       </div>
     </div>
+
+    <script src="script.js"></script>
+  </div>
 </body>
 
 </html>

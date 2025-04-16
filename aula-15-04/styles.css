@@ -26,48 +26,149 @@ body {
 
 .container .right {
   width: 50%;
-  height: 100%; 
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .container .right .card {
-  width: 500px;
-  height: 500px;
-  margin: 0;
-  padding: 0;
-  display: flex;  
-  justify-content: center;
-  align-items: center;
+  width: 50%;
+  height: auto;
+  display: flex;
   flex-direction: column;
-  background-color: #333;
-  border-radius: 10px;
+  background-color: #202020;
+  border-radius: 15px;
+  padding: 10px 20px;
 }
 
-.container .right .card .top {
+
+
+.container .right .card .top .line {
+  width: 150px;
+  height: 4px;
+  background-color: #00FF04;
+  border-radius: 5px;
+}
+
+
+.container .right .card .top h1 {
+  line-height: 0px;
+}
+
+.container .right .card .middle .inp .campo {
   width: 100%;
-  height: 20%;
-  background-color: #338913;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #343434;
+  border-radius: 5px;
+}
+
+.container .right .card .middle .inp label {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
 }
 
 .container .right .card .middle {
-  width: 100%;
-  height: 55%;
-  background-color: #e52d2d;
+  padding-top: 10px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container .right .card .middle .inp .campo .icon {
+  width: 10%;
+  height: 100%;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  color: #00FF04;
+  font-size: 100%;
+}
+
+
+.container .right .card .middle .inp .campo .campo-input {
+  width: 80%;
+  height: 100%;
+}
+
+.container .right .card .middle .inp .campo .campo-input input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.container .right .card .middle .inp .campo .value {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00FF04;
+  font-size: 100%;
+}
+
+
+.container .right .card .middle button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00FF04;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container .right .card .end{
+  display: flex;
+  width: 100%;
+  padding-top: 10px;
   flex-direction: column;
 }
 
-.container .right .card .end {
+.container .right .card .end .linha{
   width: 100%;
-  height: 25%;
-  background-color: #9a73ff;
+  height: 2px;
+  background-color: #00FF04;
+}
+
+.container .right .card .end .resultado{
+  width: 100%;
+  display: flex;
+}
+
+.container .right .card .end .resultado .esquerda {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #00FF04;
+  font-weight: bold;
+}
+
+.container .right .card .end .resultado .esquerda h2{
+  line-height: 0px;
+}
+
+.container .right .card .end .resultado .direita{
+  width: 65%;
+  height: 100%;
+  color: #00FF04;
+  font-weight: bold;
+  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
